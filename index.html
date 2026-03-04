@@ -39,7 +39,7 @@
               <legend>Categoria</legend>
               <select id="category" name="category" required>
                 <option value="" disabled selected hidden>Selecione</option>
-                <option selected value="food">Alimentação</option>
+                <option value="food">Alimentação</option>
                 <option value="accommodation">Hospedagem</option>
                 <option value="services">Serviços</option>
                 <option value="transport">Transporte</option>
@@ -54,7 +54,6 @@
                 name="amount"
                 id="amount"
                 placeholder="R$ 0,00"
-                value="12"
                 required
               />
             </fieldset>
@@ -62,7 +61,6 @@
 
           <button type="submit">Adicionar despesa</button>
         </form>
-
         <aside>
           <header>
             <p>
@@ -72,24 +70,9 @@
             <h2><small>R$</small>0,00</h2>
           </header>
 
-          <ul>
-            <!-- 
-              Exemplo da estrutura html de um item de despesa 
-            <li class="expense">
-              <img src="./img/food.svg" alt="Ícone de tipo da despesa" />
-
-              <div class="expense-info">
-                <strong>Almoço</strong>
-                <span>Alimentação</span>
-              </div>
-
-              <span class="expense-amount"><small>R$</small>1.420,57</span>
-
-              <img src="./img/remove.svg" alt="remover" class="remove-icon" />
-            </li>
-            -->
-          </ul>
+          <ul id="list"></ul>
         </aside>
       </section>
+      <script src="script.js"></script>
   </body>
 </html>
